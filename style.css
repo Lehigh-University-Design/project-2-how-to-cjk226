@@ -22,12 +22,17 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 nav h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.2rem; /* bigger */
 }
+
 
 .nav-btn {
   background: #8c7b6b;
