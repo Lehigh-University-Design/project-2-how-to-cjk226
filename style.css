@@ -1,0 +1,101 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #3c2f2f;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #6b5644; /* brown */
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-btn {
+  background: #8c7b6b;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /* removes underline */
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #6b5644; /* darker brown on hover */
+}
+
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #6b5644;
+  font-weight: bold;
+}
+
+/* Steps */
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  width: 80%;
+  gap: 1rem;
+}
+
+.step-text {
+  flex: 1;
+  background-color: #8c7b6b;
+  color: white;
+  padding: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.step-image {
+  flex: 1;
+  height: 180px;
+  background: #ddd url('') center/cover no-repeat;
+  border-radius: 8px;
+}
+
+/* Alternate steps */
+.step.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Footer */
+footer {
+  background-color: #6b5644;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  color: white;
+}
