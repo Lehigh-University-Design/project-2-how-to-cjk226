@@ -14,7 +14,8 @@ body {
 
 /* Header */
 header {
-  background-color: #6b5644; /* brown */
+  background-color: #6b5644;
+  /* brown */
   padding: 1rem;
 }
 
@@ -30,9 +31,9 @@ nav h1 {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  font-size: 2.2rem; /* bigger */
+  font-size: 2.2rem;
+  /* bigger */
 }
-
 
 .nav-btn {
   background: #8c7b6b;
@@ -40,14 +41,15 @@ nav h1 {
   border-radius: 8px;
   color: white;
   font-weight: bold;
-  text-decoration: none; /* removes underline */
+  text-decoration: none;
+  /* removes underline */
   transition: background 0.3s ease;
 }
 
 .nav-btn:hover {
-  background: #6b5644; /* darker brown on hover */
+  background: #6b5644;
+  /* darker brown on hover */
 }
-
 
 /* Hero section */
 .hero {
@@ -103,4 +105,257 @@ footer {
 
 footer p {
   color: white;
+}
+
+/* Step container */
+.step {
+  background-color: #7a6b5d;
+  /* brown color */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 2rem auto;
+  /* centers the box */
+  text-align: center;
+  /* centers text and image */
+}
+
+/* Step text */
+.step-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Step image */
+.step-image img {
+  width: 150px;
+  /* smaller image */
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  /* centers image horizontally */
+}
+
+/* Step container */
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7a6b5d;
+  /* brown box color */
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 2rem auto;
+  gap: 1rem;
+  /* space between text and image */
+}
+
+/* Reverses layout for alternate steps (like Step 2) */
+.step.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text styling */
+.step-text {
+  flex: 1 1 60%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Image container */
+.step-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image itself */
+.step-image img {
+  width: 120px;
+  /* adjust this number to make it smaller or bigger */
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #c9b09a;
+  color: #3b2f2f;
+}
+
+header {
+  background-color: #6b4f3b;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #d8c2a9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #3b2f2f;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3b2f2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6b4f3b;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.empty-box {
+  width: 120px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.empty-logo {
+  background-color: #6b4f3b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+footer {
+  background-color: #6b4f3b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+header {
+  background-color: #6b4f3b;
+  padding: 20px;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Position the back button in the top-left corner */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #3b2f2f;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+/* Slight hover effect for the button */
+.back-button:hover {
+  background-color: #4f3a2f;
+}
+
+/* Center title remains unaffected */
+.site-title {
+  margin: 0;
+}
+
+/* Shared header styling */
+.main-header {
+  background-color: #6b4f3b;
+  /* Same brown as homepage */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Back to Home button */
+.back-button {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background-color: #5a4030;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.back-button:hover {
+  background-color: #4a3224;
+}
+
+/* Ingredients layout */
+.ingredients-container {
+  background-color: #d9c5af;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ingredient-step {
+  background-color: #8b7355;
+  color: white;
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #6b4f3b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
