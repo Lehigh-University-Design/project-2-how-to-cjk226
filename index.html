@@ -1,76 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cara's Coffee</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara's Coffee</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Header -->
-<header>
-  <nav>
-    <div class="nav-left">
-      <a href="ingredients.html" class="nav-btn">Ingredients</a>
-    </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="ingredients.html" class="nav-btn">Ingredients</a>
+            </div>
 
-    <h1>Cara’s Coffee</h1>
+            <h1>Cara’s Coffee</h1>
 
-    <div class="nav-right">
-      <a href="videos.html" class="nav-btn">Videos</a>
-    </div>
-  </nav>
-</header>
+            <div class="nav-right">
+                <a href="videos.html" class="nav-btn">Videos</a>
+            </div>
+        </nav>
+    </header>
 
+<section class="hero">
+  <div class="hero-content">
+    <h2>
+      How To Make<br>
+      the Perfect Iced<br>
+      Latte at Home!
+    </h2>
+    <img src="images/cup.png" alt="Iced latte cup">
+  </div>
+</section>
 
-
-  <!-- Hero Title -->
-  <section class="hero">
-    <h2>How To Make the Perfect Iced Latte at Home!</h2>
-  </section>
-
-<!-- Steps -->
-<main>
-  <div class="step">
-    <div class="step-text">Step 1: Brew the Espresso</div>
-    <div class="step-image">
-      <img src="images/brew.jpg" alt="Brew espresso" width="300">
+    <!-- Steps -->
+    <main>
+       <div class="step">
+  <div class="step-text">
+    <h3>Step 1: Brew your Espresso</h3>
+    <button class="toggle-btn">+</button>
+    <div class="extra-info">
+      Brew a double shot of espresso using your favorite pod or ground coffee. 
+      Let it cool for a few minutes before pouring over ice.
     </div>
   </div>
+  <div class="step-image">
+    <img src="images/brew.jpg" alt="Brew Espresso">
+  </div>
+</div>
 
-    <div class="step reverse">
-      <div class="step-text">Step 2: Prepare the Glass with Ice</div>
-      <div class="step-image">
-        <img src="images/ice.png" alt="ice" width="300">
-      </div>
-    </div>
 
-    <div class="step">
-      <div class="step-text">Step 3: Add Milk and Creamer of Choice</div>
-      <div class="step-image"></div>
-    </div>
+        <div class="step reverse">
+            <div class="step-text">Step 2: Prepare the Glass with Ice</div>
+            <div class="step-image">
+                <img src="images/ice.png" alt="ice" width="300">
+            </div>
+        </div>
 
-    <div class="step reverse">
-      <div class="step-text">Step 4: Add in the Espresso</div>
-      <div class="step-image"></div>
-    </div>
+        <div class="step">
+            <div class="step-text">Step 3: Add Milk and Creamer of Choice</div>
+            <div class="step-image"></div>
+        </div>
 
-    <div class="step">
-      <div class="step-text">Step 5: Mix Gently</div>
-      <div class="step-image"></div>
-    </div>
+        <div class="step reverse">
+            <div class="step-text">Step 4: Add in the Espresso</div>
+            <div class="step-image"></div>
+        </div>
 
-    <div class="step reverse">
-      <div class="step-text">Step 6: Sip and Enjoy!</div>
-      <div class="step-image"></div>
-    </div>
-  </main>
+        <div class="step">
+            <div class="step-text">Step 5: Mix Gently</div>
+            <div class="step-image"></div>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>Cara Kelley | Web Design 070</p>
-  </footer>
+        <div class="step reverse">
+            <div class="step-text">Step 6: Sip and Enjoy!</div>
+            <div class="step-image"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Cara Kelley | Web Design 070</p>
+    </footer>
+
+    <script>
+  // Select all toggle buttons
+  const buttons = document.querySelectorAll('.toggle-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const parent = button.parentElement;
+
+      // Toggle the active state
+      parent.classList.toggle('active');
+
+      // Change the button symbol between + and -
+      if (parent.classList.contains('active')) {
+        button.textContent = '−';
+      } else {
+        button.textContent = '+';
+      }
+    });
+  });
+</script>
 
 </body>
+
 </html>
