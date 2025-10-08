@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
  margin: 0;
  padding: 0;
@@ -13,13 +13,6 @@ body {
  line-height: 1.6;
 }
 
-
-/* Header */
-header {
- background-color: #6b5644;
- /* brown */
- padding: 1rem;
-}
 
 
 nav {
@@ -36,7 +29,6 @@ nav h1 {
  transform: translateX(-50%);
  color: white;
  font-size: 2.2rem;
- /* bigger */
 }
 
 
@@ -63,7 +55,7 @@ nav h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent; /* removes white block */
+  background: transparent; 
   padding: 40px 0;
 }
 
@@ -126,19 +118,6 @@ nav h1 {
 }
 
 
-/* Footer */
-footer {
- background-color: #6b5644;
- text-align: center;
- padding: 1rem;
- margin-top: 2rem;
-}
-
-
-footer p {
- color: white;
-}
-
 
 /* Step container */
 .step {
@@ -170,7 +149,6 @@ footer p {
  border-radius: 8px;
  display: block;
  margin: 0 auto;
- /* centers image horizontally */
 }
 
 
@@ -187,7 +165,6 @@ footer p {
  max-width: 800px;
  margin: 2rem auto;
  gap: 1rem;
- /* space between text and image */
 }
 
 
@@ -232,16 +209,6 @@ body {
 }
 
 
-header {
- background-color: #6b4f3b;
- padding: 20px;
- text-align: center;
- color: white;
- font-size: 1.8em;
- font-weight: bold;
-}
-
-
 .container {
  width: 80%;
  max-width: 900px;
@@ -249,12 +216,6 @@ header {
  background-color: #d8c2a9;
  padding: 20px;
  border-radius: 8px;
-}
-
-
-h1 {
- text-align: center;
- color: #3b2f2f;
 }
 
 .ingredients-list {
@@ -336,24 +297,11 @@ header {
  background-color: #4f3a2f;
 }
 
-
-/* Center title remains unaffected */
 .site-title {
  margin: 0;
 }
 
 
-/* Shared header styling */
-.main-header {
- background-color: #6b4f3b;
- /* Same brown as homepage */
- color: white;
- padding: 20px;
- text-align: center;
- font-size: 1.5em;
- font-weight: bold;
- position: relative;
-}
 
 
 /* Back to Home button */
@@ -420,10 +368,11 @@ footer {
  transition: background-color 0.3s ease;
 }
 
-
 .ingredient-link:hover {
  background-color: var(--brown-dark);
 }
+
+
 
 /* The + / - button */
 .toggle-btn {
