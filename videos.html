@@ -1,21 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Cara’s Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #c9b09a;
+      color: #3b2f2f;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #3b2f2f;
+    }
+
+    .video-box {
+      background-color: #8c7b6b;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    iframe {
+      border-radius: 10px;
+      width: 560px;
+      height: 315px;
+      max-width: 90%;
+    }
+
+    footer {
+      background-color: #6b4f3b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: auto;
+    }
+
+
+    .nav-btn {
+      background: #8c7b6b;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: #6b5644;
+    }
+
+  </style>
 </head>
+
 <body>
-    <header>
+  <header>
     <nav>
-      <div class="nav-left">
-        <a href="index.html" class="nav-btn">Home</a>
-      </div>
+      <a href="index.html" class="nav-btn">Home</a>
       <h1>Cara’s Coffee</h1>
-      <div class="nav-right">
-        <a href="videos.html" class="nav-btn">Videos</a>
-      </div>
+      <a href="ingredients.html" class="nav-btn">Ingredients</a>
     </nav>
   </header>
+
+  <main>
+    <h2>Watch this video for a visual explanation!</h2>
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/z_2SvtwDgvU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    Cara Kelley | Web Design 070
+  </footer>
 </body>
+
 </html>

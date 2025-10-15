@@ -66,24 +66,62 @@
 </div>
 
 
-        <div class="step">
-            <div class="step-text">Step 3: Add Milk and Creamer of Choice</div>
-            <div class="step-image"></div>
-        </div>
+        <!-- Step 3 -->
+<div class="step">
+  <div class="step-text">
+    <h3>Step 3: Add Milk and Creamer of Choice</h3>
+    <button class="toggle-btn" onclick="toggleInfo(this)">+</button>
+    <div class="extra-info">
+      <p>Pour in your favorite milk — oat, almond, or dairy — and add any creamer for sweetness and texture. Mix until smooth.</p>
+    </div>
+  </div>
+  <div class="step-image">
+    <img src="images/milk.png" alt="Milk and Creamer" />
+  </div>
+</div>
 
-        <div class="step reverse">
-            <div class="step-text">Step 4: Add in the Espresso</div>
-            <div class="step-image"></div>
-        </div>
+<!-- Step 4 -->
+<div class="step reverse">
+  <div class="step-text">
+    <h3>Step 4: Add in the Espresso</h3>
+    <button class="toggle-btn" onclick="toggleInfo(this)">+</button>
+    <div class="extra-info">
+      <p>Slowly pour the espresso over your milk mixture to create beautiful layers. A double shot gives a stronger flavor.</p>
+    </div>
+  </div>
+  <div class="step-image">
+    <img src="images/shot.png" alt="Espresso" />
+  </div>
+</div>
 
-        <div class="step">
-            <div class="step-text">Step 5: Mix Gently</div>
-            <div class="step-image"></div>
-        </div>
+<!-- Step 5 -->
+<div class="step">
+  <div class="step-text">
+    <h3>Step 5: Mix Gently</h3>
+    <button class="toggle-btn" onclick="toggleInfo(this)">+</button>
+    <div class="extra-info">
+      <p>Use a spoon or straw to lightly swirl your drink — just enough to blend without losing that creamy texture.</p>
+    </div>
+  </div>
+  <div class="step-image">
+    <img src="images/spoon.png" alt="Mixing" />
+  </div>
+</div>
 
-        <div class="step reverse">
-            <div class="step-text">Step 6: Sip and Enjoy!</div>
-            <div class="step-image"></div>
+<!-- Step 6 -->
+<div class="step reverse">
+  <div class="step-text">
+    <h3>Step 6: Sip and Enjoy!</h3>
+    <button class="toggle-btn" onclick="toggleInfo(this)">+</button>
+    <div class="extra-info">
+      <p>Take a sip and enjoy your perfect iced latte! Customize next time with different flavors or toppings.</p>
+    </div>
+  </div>
+  <div class="step-image">
+    <img src="images/enjoy.png" alt="Enjoy" />
+  </div>
+</div>
+
         </div>
     </main>
 
@@ -111,6 +149,13 @@
       }
     });
   });
+</script>
+<script>
+function toggleInfo(button) {
+  const extraInfo = button.nextElementSibling;
+  extraInfo.style.display = extraInfo.style.display === "block" ? "none" : "block";
+  button.textContent = extraInfo.style.display === "block" ? "−" : "+";
+}
 </script>
 
 </body>
